@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leaflet Visualizing Earthquakes</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Earthquake Data Dashboard</h1>
+      <p>This visualization applies Leaflet.js to present the past 7 days earthquake events, 
+        which are updated every 5 minutes by the
+        <a href="https://earthquake.usgs.gov/" target="_blank">USGS</a><br>
+        The size and color of circle markers indicate the magnitudes of the earthquake.<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <!-- D3 JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+</body>
+</html>
